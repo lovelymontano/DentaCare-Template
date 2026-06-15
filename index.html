@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentaCare Pro — Premium Dental Clinic HTML Template</title>
+    <meta name="description"
+        content="A premium, fully responsive HTML5 template for dental clinics, orthodontists, and medical practices." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ============================================================
+     NAV
+============================================================ -->
+    <nav id="nav">
+        <div class="wrap">
+            <div class="nav-inner">
+                <a href="#" class="logo">
+                    <div class="logo-mark"><i class="fa-solid fa-tooth"></i></div>
+                    DentaCare<em style="font-style:italic;color:var(--blue)">Pro</em>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <span class="nav-tel"><i class="fa-solid fa-phone"></i>+63 912 345 6789</span>
+                    <a href="#contact" class="btn btn-primary"><i class="fa-regular fa-calendar-check"></i> Book Now</a>
+                </div>
+                <button class="hamburger" onclick="toggleDrawer()" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="drawer">
+        <button class="drawer-close" onclick="toggleDrawer()"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#services" onclick="toggleDrawer()">Services</a>
+        <a href="#about" onclick="toggleDrawer()">About</a>
+        <a href="#testimonials" onclick="toggleDrawer()">Reviews</a>
+        <a href="#pricing" onclick="toggleDrawer()">Pricing</a>
+        <a href="#contact" onclick="toggleDrawer()">Book Appointment</a>
+    </div>
+
+    <!-- ============================================================
+     HERO
+============================================================ -->
+    <section id="hero">
+        <div class="hero-bg-panel"></div>
+        <div class="wrap" style="width:100%">
+            <div class="hero-inner">
+
+                <!-- Copy -->
+                <div class="hero-copy">
+                    <span class="eyebrow">Trusted Since 2010</span>
+                    <h1 class="display">
+                        Advanced Care<br />for Your<br /><em>Perfect Smile.</em>
+                    </h1>
+                    <p class="lead">
+                        Modern dentistry delivered with warmth, precision, and the latest technology — for every
+                        patient, from every walk of life.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <i class="fa-regular fa-calendar-check"></i> Book a Free Consult
+                        </a>
+                        <span class="hero-play">
+                            <span class="play-ring"><i class="fa-solid fa-play"></i></span>
+                            Our Story
+                        </span>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-avatars">
+                            <span>AL</span><span>MC</span><span>JR</span><span>+</span>
+                        </div>
+                        <div class="trust-text">
+                            <strong>2,500+ Happy Patients</strong>
+                            Rated 4.9 ★ on Google &amp; Zocdoc
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual -->
+                <div class="hero-visual">
+                    <!-- Floating badge top -->
+                    <div class="f-badge f-badge-1">
+                        <div class="f-icon blue"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h5>ISO Certified</h5>
+                            <p>Sterilization Standards</p>
+                        </div>
+                    </div>
+
+                    <!-- Main glassy card -->
+                    <div class="hero-card-main">
+                        <div class="doctor-row">
+                            <div class="doctor-avatar">🦷</div>
+                            <div class="doctor-info">
+                                <h4>Dr. Maria Santos, DDS</h4>
+                                <p>General &amp; Cosmetic Dentist</p>
+                            </div>
+                        </div>
+                        <div class="rating-row">
+                            <div>
+                                <div class="stars-group">★★★★★</div>
+                                <div class="rating-text"
+                                    style="color:rgba(255,255,255,.55);font-size:12px;margin-top:2px">Verified Reviews
+                                </div>
+                            </div>
+                            <div class="rating-num">4.9</div>
+                        </div>
+                        <div class="next-slot-label">Next Available — Today</div>
+                        <div class="slots">
+                            <div class="slot-row"><span class="time"><i class="fa-regular fa-clock"
+                                        style="color:var(--accent);margin-right:7px"></i>09:00 AM</span><span
+                                    class="slot-taken">Booked</span></div>
+                            <div class="slot-row"><span class="time"><i class="fa-regular fa-clock"
+                                        style="color:var(--accent);margin-right:7px"></i>11:00 AM</span><span
+                                    class="slot-open">Available</span></div>
+                            <div class="slot-row"><span class="time"><i class="fa-regular fa-clock"
+                                        style="color:var(--accent);margin-right:7px"></i>02:30 PM</span><span
+                                    class="slot-open">Available</span></div>
+                            <div class="slot-row"><span class="time"><i class="fa-regular fa-clock"
+                                        style="color:var(--accent);margin-right:7px"></i>04:00 PM</span><span
+                                    class="slot-taken">Booked</span></div>
+                        </div>
+                        <button class="book-now-btn" onclick="scrollTo('#contact')">Reserve a Slot →</button>
+                    </div>
+
+                    <!-- Floating badge bottom -->
+                    <div class="f-badge f-badge-2">
+                        <div class="f-icon cyan"><i class="fa-solid fa-award"></i></div>
+                        <div>
+                            <h5>#1 Rated</h5>
+                            <p>In the Metro · 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     TRUST BAR
+============================================================ -->
+    <div id="trust">
+        <div class="wrap">
+            <div class="trust-inner">
+                <div class="trust-item"><i class="fa-solid fa-tooth"></i> Board-Certified Dentists</div>
+                <div class="trust-divider"></div>
+                <div class="trust-item"><i class="fa-solid fa-shield-virus"></i> ISO-Compliant Sterilization</div>
+                <div class="trust-divider"></div>
+                <div class="trust-item"><i class="fa-solid fa-credit-card"></i> HMO &amp; PhilHealth Accepted</div>
+                <div class="trust-divider"></div>
+                <div class="trust-item"><i class="fa-solid fa-bolt"></i> Same-Day Emergency Slots</div>
+                <div class="trust-divider"></div>
+                <div class="trust-item"><i class="fa-solid fa-star"></i> 4.9 ★ Google Rating</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+     SERVICES
+============================================================ -->
+    <section id="services" class="section">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">What We Offer</span>
+                <h2 class="display">Complete Dental Care<br /><em>Under One Roof</em></h2>
+                <p class="lead" style="margin-top:16px">From your first check-up to a full smile transformation — every
+                    service delivered with precision and care.</p>
+            </div>
+
+            <div class="services-layout">
+                <!-- Tabs -->
+                <div class="service-tabs reveal">
+                    <div class="stab active" data-tab="t1">
+                        <div class="stab-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="stab-text">
+                            <h4>Check-Up &amp; Cleaning</h4>
+                            <p>Preventive care</p>
+                        </div>
+                    </div>
+                    <div class="stab" data-tab="t2">
+                        <div class="stab-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div class="stab-text">
+                            <h4>Teeth Whitening</h4>
+                            <p>Cosmetic</p>
+                        </div>
+                    </div>
+                    <div class="stab" data-tab="t3">
+                        <div class="stab-icon"><i class="fa-solid fa-teeth"></i></div>
+                        <div class="stab-text">
+                            <h4>Braces &amp; Aligners</h4>
+                            <p>Orthodontics</p>
+                        </div>
+                    </div>
+                    <div class="stab" data-tab="t4">
+                        <div class="stab-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="stab-text">
+                            <h4>Crowns &amp; Veneers</h4>
+                            <p>Restorative</p>
+                        </div>
+                    </div>
+                    <div class="stab" data-tab="t5">
+                        <div class="stab-icon"><i class="fa-solid fa-syringe"></i></div>
+                        <div class="stab-text">
+                            <h4>Implants</h4>
+                            <p>Permanent solution</p>
+                        </div>
+                    </div>
+                    <div class="stab" data-tab="t6">
+                        <div class="stab-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                        <div class="stab-text">
+                            <h4>Pediatric Dentistry</h4>
+                            <p>Kids' care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panels -->
+                <div class="service-panels reveal reveal-delay-1">
+
+                    <div class="service-panel active" id="t1">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">🪥</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Preventive Care</span>
+                                <h3 class="display">Check-Up &amp;<br /><em>Cleaning</em></h3>
+                                <p>Routine exams and professional scaling help you stay ahead of problems. We use
+                                    digital X-rays with 90% less radiation to detect cavities early and keep your gums
+                                    healthy long-term.</p>
+                                <ul class="spanel-list">
+                                    <li>Comprehensive oral examination</li>
+                                    <li>Professional ultrasonic scaling &amp; polishing</li>
+                                    <li>Digital X-ray assessment</li>
+                                    <li>Personalized home-care plan</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Book a Check-Up</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-panel" id="t2">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">✨</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Cosmetic</span>
+                                <h3 class="display">Professional<br /><em>Whitening</em></h3>
+                                <p>Our in-office whitening delivers results up to 8 shades brighter in a single
+                                    60-minute session — far beyond anything available over the counter, with zero
+                                    sensitivity issues.</p>
+                                <ul class="spanel-list">
+                                    <li>Zoom! &amp; Philips in-office whitening</li>
+                                    <li>Custom take-home tray option</li>
+                                    <li>Safe for enamel, sensitive formulas available</li>
+                                    <li>Results last 12–24 months</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Book Whitening</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-panel" id="t3">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">🦷</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Orthodontics</span>
+                                <h3 class="display">Braces &amp;<br /><em>Aligners</em></h3>
+                                <p>Whether you prefer traditional metal braces or nearly invisible clear aligners, our
+                                    orthodontists will design a treatment plan tailored to your bite, timeline, and
+                                    budget.</p>
+                                <ul class="spanel-list">
+                                    <li>Traditional metal &amp; ceramic braces</li>
+                                    <li>Clear aligner therapy (Invisalign-compatible)</li>
+                                    <li>Free orthodontic consultation</li>
+                                    <li>Flexible installment payment plans</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Free Consult</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-panel" id="t4">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">👑</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Restorative</span>
+                                <h3 class="display">Crowns &amp;<br /><em>Veneers</em></h3>
+                                <p>Custom-crafted porcelain crowns and ultra-thin veneers are designed to match your
+                                    natural tooth color perfectly, restoring strength and giving you a showstopper
+                                    smile.</p>
+                                <ul class="spanel-list">
+                                    <li>All-ceramic &amp; zirconia crowns</li>
+                                    <li>Porcelain veneers — 0.3mm ultra-thin</li>
+                                    <li>Same-day CEREC options available</li>
+                                    <li>10-year workmanship warranty</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-panel" id="t5">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">🔩</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Permanent Solution</span>
+                                <h3 class="display">Dental<br /><em>Implants</em></h3>
+                                <p>Implants are the gold standard for replacing missing teeth — they look, feel, and
+                                    function exactly like natural teeth, with a success rate above 98% when placed
+                                    correctly.</p>
+                                <ul class="spanel-list">
+                                    <li>Titanium &amp; zirconia implant options</li>
+                                    <li>3D cone beam CT planning</li>
+                                    <li>Single tooth to full-arch solutions</li>
+                                    <li>Lifetime structural warranty</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Book Implant Consult</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-panel" id="t6">
+                        <div class="spanel-inner">
+                            <div class="spanel-visual">🧒</div>
+                            <div class="spanel-copy">
+                                <span class="eyebrow">Kids' Dentistry</span>
+                                <h3 class="display">Gentle<br /><em>Pediatric Care</em></h3>
+                                <p>Our child-friendly clinic environment and gentle approach help young patients build a
+                                    positive relationship with dental care early — preventing a lifetime of dental
+                                    anxiety.</p>
+                                <ul class="spanel-list">
+                                    <li>Kid-friendly waiting area with play corner</li>
+                                    <li>Sealants &amp; fluoride treatments</li>
+                                    <li>Early orthodontic screening</li>
+                                    <li>Laughing gas (nitrous oxide) available</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Book for Your Child</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     ABOUT
+============================================================ -->
+    <section id="about" class="section section--tint">
+        <div class="wrap">
+            <div class="about-inner">
+
+                <div class="about-visual-wrap reveal">
+                    <div class="about-img-main">🏥</div>
+                    <div class="about-img-thumb">🦷</div>
+                    <div class="exp-chip">
+                        <div class="num">12<span style="color:var(--blue)">+</span></div>
+                        <div class="lbl">Years of<br />Excellence</div>
+                    </div>
+                </div>
+
+                <div class="about-copy reveal reveal-delay-1">
+                    <span class="eyebrow">Our Clinic</span>
+                    <h2 class="display">Where Science<br />Meets<br /><em>Compassion.</em></h2>
+                    <p class="lead">
+                        Founded in 2010, DentaCare Pro has served thousands of families across the metro — built on a
+                        philosophy that great dental care starts with genuinely listening to patients.
+                    </p>
+                    <div class="about-grid">
+                        <div class="about-feat">
+                            <i class="fa-solid fa-microscope"></i>
+                            <h4>Latest Technology</h4>
+                            <p>Digital X-rays, intraoral cameras, and CEREC same-day crowns.</p>
+                        </div>
+                        <div class="about-feat">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <h4>Expert Team</h4>
+                            <p>8 board-certified dentists across all specialties, always learning.</p>
+                        </div>
+                        <div class="about-feat">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <h4>Pain-Free Care</h4>
+                            <p>Topical anesthesia &amp; The Wand® for virtually injection-free treatment.</p>
+                        </div>
+                        <div class="about-feat">
+                            <i class="fa-solid fa-leaf"></i>
+                            <h4>Eco-Friendly Practice</h4>
+                            <p>Paperless records, biodegradable materials, and solar-powered clinic.</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-dark">Schedule a Visit <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     STATS
+============================================================ -->
+    <section id="stats" class="section--blue" style="padding:0">
+        <div class="wrap--wide">
+            <div class="stats-inner">
+                <div class="stat-cell reveal">
+                    <span class="stat-n" data-count="2500">0<span class="stat-unit">+</span></span>
+                    <div class="stat-label">Patients Treated</div>
+                </div>
+                <div class="stat-cell reveal reveal-delay-1">
+                    <span class="stat-n" data-count="12">0<span class="stat-unit">+</span></span>
+                    <div class="stat-label">Years of Practice</div>
+                </div>
+                <div class="stat-cell reveal reveal-delay-2">
+                    <span class="stat-n">4.9<span class="stat-unit">★</span></span>
+                    <div class="stat-label">Average Google Rating</div>
+                </div>
+                <div class="stat-cell reveal reveal-delay-3">
+                    <span class="stat-n" data-count="98">0<span class="stat-unit">%</span></span>
+                    <div class="stat-label">Would Recommend Us</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+    <section id="testimonials" class="section">
+        <div class="wrap">
+            <div class="section-head--center reveal">
+                <span class="eyebrow">Patient Stories</span>
+                <h2 class="display">What Our Patients<br /><em>Really Say</em></h2>
+                <p class="lead">Honest reviews from real people who trusted us with their smiles.</p>
+            </div>
+
+            <div class="testi-slider reveal">
+                <div class="testi-track" id="testiTrack">
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">I used to dread dental visits. The DentaCare Pro team completely changed
+                            that. My cleaning was painless, they explained every step, and I walked out feeling
+                            confident. I've already referred three friends.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">AL</div>
+                                <div>
+                                    <div class="testi-name">Anna Lim</div>
+                                    <div class="testi-role">Patient since 2021</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">Got my veneers done for my wedding and I could not be happier. Dr. Santos
+                            matched the exact shade I wanted. My mother and sister now drive 45 minutes just to see her.
+                            Worth every peso.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">MC</div>
+                                <div>
+                                    <div class="testi-name">Maria Cruz</div>
+                                    <div class="testi-role">Veneer Patient</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">Took my 5-year-old for his first check-up. The kids' area is adorable, the
+                            staff was so patient, and he actually smiled in the car on the way home. That never happens.
+                            We're loyal patients for life.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">JR</div>
+                                <div>
+                                    <div class="testi-name">Jose Reyes</div>
+                                    <div class="testi-role">Parent of Pediatric Patient</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">Had a dental emergency on a Saturday afternoon. Called DentaCare Pro and
+                            they fit me in within an hour. The crown was done the same day with their CEREC machine.
+                            Absolutely incredible service.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">RP</div>
+                                <div>
+                                    <div class="testi-name">Ramon Perez</div>
+                                    <div class="testi-role">Emergency Patient</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">My Invisalign journey took 14 months and the results are beyond what I
+                            imagined. The monthly check-ins were always on time, staff remembered my name, and the whole
+                            experience felt premium.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">SG</div>
+                                <div>
+                                    <div class="testi-name">Sofia Garcia</div>
+                                    <div class="testi-role">Orthodontic Patient</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <span class="quote-mark">"</span>
+                        <p class="testi-text">I was terrified of implants but the team walked me through every single
+                            step with X-rays and a 3D model. Six months later I have two implants and a natural smile
+                            again. I wish I'd done it sooner.</p>
+                        <div class="testi-footer">
+                            <div class="testi-who">
+                                <div class="testi-av">BT</div>
+                                <div>
+                                    <div class="testi-name">Ben Torres</div>
+                                    <div class="testi-role">Implant Patient</div>
+                                </div>
+                            </div>
+                            <div class="testi-stars">★★★★★</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <button class="s-btn" id="sPrev"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="s-dots" id="sDots"></div>
+                <button class="s-btn" id="sNext"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     PRICING
+============================================================ -->
+    <section id="pricing" class="section section--tint">
+        <div class="wrap">
+            <div class="section-head--center reveal">
+                <span class="eyebrow">Transparent Pricing</span>
+                <h2 class="display">Simple, Clear<br /><em>Treatment Plans</em></h2>
+                <p class="lead">No hidden fees. No surprise bills. Just honest pricing for real dental care.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="price-card reveal">
+                    <p class="price-tier">Basic</p>
+                    <div class="price-amount"><sup>₱</sup>499</div>
+                    <p class="price-period">per visit · no contract</p>
+                    <hr class="price-divider" />
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> Full oral examination</li>
+                        <li><i class="fa-solid fa-check"></i> Professional cleaning</li>
+                        <li><i class="fa-solid fa-check"></i> Digital X-ray</li>
+                        <li><i class="fa-solid fa-check"></i> Home-care advice</li>
+                        <li class="off"><i class="fa-solid fa-check"></i> Whitening treatment</li>
+                        <li class="off"><i class="fa-solid fa-check"></i> Priority emergency slots</li>
+                        <li class="off"><i class="fa-solid fa-check"></i> Free ortho screening</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center">Get
+                        Started</a>
+                </div>
+
+                <!-- Pro (Featured) -->
+                <div class="price-card featured reveal reveal-delay-1">
+                    <div class="price-badge">Most Popular</div>
+                    <p class="price-tier">Pro Family</p>
+                    <div class="price-amount"><sup>₱</sup>1,299</div>
+                    <p class="price-period">per month · covers up to 4 members</p>
+                    <hr class="price-divider" />
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> All Basic features</li>
+                        <li><i class="fa-solid fa-check"></i> 2× annual cleanings</li>
+                        <li><i class="fa-solid fa-check"></i> 1 whitening session / year</li>
+                        <li><i class="fa-solid fa-check"></i> Priority emergency slots</li>
+                        <li><i class="fa-solid fa-check"></i> Free ortho screening</li>
+                        <li><i class="fa-solid fa-check"></i> 15% off all treatments</li>
+                        <li><i class="fa-solid fa-check"></i> Pediatric covered</li>
+                    </ul>
+                    <a href="#contact" class="btn"
+                        style="width:100%;justify-content:center;background:var(--blue);color:var(--white)">Choose
+                        Pro</a>
+                </div>
+
+                <!-- Elite -->
+                <div class="price-card reveal reveal-delay-2">
+                    <p class="price-tier">Elite</p>
+                    <div class="price-amount"><sup>₱</sup>3,999</div>
+                    <p class="price-period">per month · unlimited visits</p>
+                    <hr class="price-divider" />
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> All Pro features</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited cleanings</li>
+                        <li><i class="fa-solid fa-check"></i> 2 whitening sessions / year</li>
+                        <li><i class="fa-solid fa-check"></i> Free veneer consultation</li>
+                        <li><i class="fa-solid fa-check"></i> 25% off all treatments</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated care coordinator</li>
+                        <li><i class="fa-solid fa-check"></i> Implant &amp; ortho discount</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary" style="width:100%;justify-content:center">Get Elite</a>
+                </div>
+            </div>
+
+            <p style="text-align:center;font-size:13px;color:var(--body);margin-top:32px">All plans accept PhilHealth,
+                HMO, and installment payments. <a href="#contact" style="color:var(--blue);font-weight:600">Contact
+                    us</a> for corporate group rates.</p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     FAQ
+============================================================ -->
+    <section id="faq" class="section">
+        <div class="wrap">
+            <div class="faq-inner">
+
+                <div>
+                    <div class="section-head reveal">
+                        <span class="eyebrow">FAQ</span>
+                        <h2 class="display">Common<br /><em>Questions</em></h2>
+                        <p class="lead" style="margin-top:16px">Everything you need to know before your first visit.</p>
+                    </div>
+
+                    <div class="faq-list reveal">
+
+                        <div class="faq-item open">
+                            <div class="faq-q">
+                                <span>How often should I visit the dentist?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">Most adults benefit from a check-up and professional cleaning every six
+                                months. Patients with gum disease or a history of cavities may need to come in every
+                                three to four months. During your first visit, we'll recommend the right schedule for
+                                you.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <span>Is teeth whitening safe for sensitive teeth?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">Yes. We use sensitivity-formulated bleaching gels and desensitizing
+                                agents applied before and after the procedure. Most patients with sensitivity experience
+                                little to no discomfort during or after treatment.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <span>Do you accept walk-in patients?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">Walk-ins are welcome but subject to availability. Booking in advance
+                                guarantees your preferred time slot. For dental emergencies, we always reserve same-day
+                                slots — just call us and we'll fit you in.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <span>What HMO plans do you accept?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">We are accredited with Maxicare, MediCard, Intellicare, PhilCare,
+                                Asianlife, and most major HMO providers. We also accept PhilHealth for eligible
+                                procedures. Contact us to verify your specific plan coverage.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <span>How long does a dental implant procedure take?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">The implant placement itself takes 30–60 minutes per tooth.
+                                Osseointegration (bone bonding) takes 3–6 months, after which the crown is attached. The
+                                total timeline from start to final crown is typically 4–8 months depending on bone
+                                density and healing.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-q">
+                                <span>Is the clinic child-friendly?</span>
+                                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                            <div class="faq-a">Absolutely. Our waiting area has a dedicated play corner with toys and
+                                tablets. Our pediatric dentists use the Tell-Show-Do technique and child-friendly
+                                language to make every visit positive and stress-free for young patients aged 2 and up.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CTA box -->
+                <div class="reveal reveal-delay-1">
+                    <div class="faq-cta-box">
+                        <span class="eyebrow">Still Have Questions?</span>
+                        <h3>Talk to Our Team Directly</h3>
+                        <p>Our friendly front desk is available Monday to Saturday, 8 AM to 6 PM. We typically reply
+                            within 30 minutes.</p>
+                        <ul class="faq-contact-list">
+                            <li><i class="fa-solid fa-phone"></i>+63 912 345 6789</li>
+                            <li><i class="fa-brands fa-viber"></i>+63 912 345 6789 (Viber)</li>
+                            <li><i class="fa-solid fa-envelope"></i>hello@dentacarepro.com</li>
+                            <li><i class="fa-brands fa-facebook-messenger"></i>m.me/dentacarepro</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center">
+                            <i class="fa-regular fa-calendar-check"></i> Book Online Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     CONTACT + MAP
+============================================================ -->
+    <section id="contact" class="section section--tint">
+        <div class="wrap">
+            <div class="contact-inner">
+
+                <div class="contact-info reveal">
+                    <span class="eyebrow">Find Us</span>
+                    <h2 class="display">Visit the<br /><em>Clinic</em></h2>
+                    <p class="lead" style="margin-top:14px;margin-bottom:32px">Walk-ins welcome. Scheduled patients are
+                        always seen first. Book ahead for your preferred slot.</p>
+
+                    <div class="info-grid">
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <strong>Address</strong>
+                                <span>123 Bonifacio St., Magsaysay District,<br />Quezon City, Metro Manila 1100</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <strong>Phone / Viber</strong>
+                                <span>+63 912 345 6789</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+                            <div class="info-text">
+                                <strong>Clinic Hours</strong>
+                                <span>Mon – Sat: 8:00 AM – 6:00 PM<br />Sunday: By appointment only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-box">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5!2d121.043701!3d14.676041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b09f6d1a9a87%3A0x5a9e24a4d31abf26!2sQuezon%20City%20Hall!5e0!3m2!1sen!2sph!4v1718000000000"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Clinic Location">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="reveal reveal-delay-1">
+                    <div class="form-card">
+                        <h3>Book an Appointment</h3>
+                        <p>Fill in your details and we'll confirm within 24 hours.</p>
+
+                        <!-- Replace YOUR_ACCESS_KEY with a free key from web3forms.com -->
+                        <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                            <input type="hidden" name="subject" value="New Booking — DentaCare Pro" />
+
+                            <div class="fg-row">
+                                <div class="fg">
+                                    <label>First Name</label>
+                                    <input type="text" name="first_name" placeholder="Maria" required />
+                                </div>
+                                <div class="fg">
+                                    <label>Last Name</label>
+                                    <input type="text" name="last_name" placeholder="Santos" required />
+                                </div>
+                            </div>
+                            <div class="fg">
+                                <label>Email Address</label>
+                                <input type="email" name="email" placeholder="maria@email.com" required />
+                            </div>
+                            <div class="fg">
+                                <label>Phone / Viber</label>
+                                <input type="tel" name="phone" placeholder="+63 912 345 6789" />
+                            </div>
+                            <div class="fg">
+                                <label>Service Needed</label>
+                                <select name="service" required>
+                                    <option value="" disabled selected>Select a service...</option>
+                                    <option>Check-Up &amp; Cleaning</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Braces / Clear Aligners</option>
+                                    <option>Crowns &amp; Veneers</option>
+                                    <option>Dental Implants</option>
+                                    <option>Pediatric Dentistry</option>
+                                    <option>Emergency Visit</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="fg">
+                                <label>Message / Preferred Schedule <span
+                                        style="font-weight:400;color:var(--body)">(optional)</span></label>
+                                <textarea name="message"
+                                    placeholder="E.g. Preferred date, current concern, etc."></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                Confirm Appointment
+                            </button>
+                            <div id="success-msg">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Thank you! We'll reach out within 24 hours to confirm your booking.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     FOOTER
+============================================================ -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo" style="display:inline-flex;margin-bottom:18px">
+                        <div class="logo-mark"><i class="fa-solid fa-tooth"></i></div>
+                        <span
+                            style="font-family:var(--serif);font-size:22px;color:var(--white);margin-left:11px">DentaCare<em
+                                style="font-style:italic;color:var(--blue)">Pro</em></span>
+                    </div>
+                    <p>Modern, gentle dental care for your whole family — delivered by a team that genuinely cares about
+                        your smile and your comfort.</p>
+                    <div class="socials">
+                        <a href="#" class="soc" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="soc" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="soc" aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="soc" aria-label="Viber"><i class="fa-brands fa-viber"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#services">Check-Up &amp; Cleaning</a></li>
+                        <li><a href="#services">Teeth Whitening</a></li>
+                        <li><a href="#services">Braces &amp; Aligners</a></li>
+                        <li><a href="#services">Crowns &amp; Veneers</a></li>
+                        <li><a href="#services">Dental Implants</a></li>
+                        <li><a href="#services">Pediatric Dentistry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#about">About the Clinic</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                        <li><a href="#pricing">Pricing Plans</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter footer-col">
+                    <h5>Health Newsletter</h5>
+                    <p>Monthly oral health tips and clinic updates — no spam, ever.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="your@email.com" />
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2025 DentaCare Pro. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
